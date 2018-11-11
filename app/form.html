@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Форма Барбершоп</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body class="inner-page">
+	<header class="page-header">
+		<a href="" class="page-header__logo">
+			<img src="" alt="логотип барбершоп Бородинский" class="page-header__logo-image" width="226" height="30">
+		</a>
+		<nav class="main-nav">
+			<button class="main-nav__toggle" type="button">открыть меню</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item ">
+						<a href="index.html" class="site-list__link">Главная</a>
+					</li>
+					<li class="site-list__item">
+						<a href="" class="site-list__link">Наши работы</a>
+					</li>
+					<li class="site-list__item">
+						<a href="" class="site-list__link site-list__item--active">Записаться</a>
+					</li>
+					<li class="site-list__item">
+						<a href="" class="site-list__link">Контакты</a>
+					</li>
+					<li class="site-list__item">
+						<a href="" class="site-list__link">HTML Academy</a>
+					</li>
+				</ul>
+				<ul class="main-nav__list user-list">
+					<li class="user-lst__item">
+						<a href="" class="user-list__login">Войти</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main class="page-main">
+		<h2 class="visually-hidden">Форма записи на стрижку</h2>
+		<section class="write">
+			<h3 class="write__header">Запись на стрижку</h3>
+			<form action="" class="write__form page-form">
+				<fieldset class="page-form__contacts field-contacts">
+					<p class="field-contacts__block">
+						<label for="surname" class="field-contacts__label"></label>
+						<input type="text" class="field-contacts__input" id="surname" placeholder="Фамилия" name="user-surname">
+					</p>
+					<p class="field-contacts__block">
+						<label for="name" class="field-contacts__label"></label>
+						<input type="text" class="field-contacts__input" id="name" placeholder="Имя" name="user-name">
+					</p>
+					<p class="field-contacts__block">
+						<label for="patron" class="field-contacts__label"></label>
+						<input type="text" class="field-contacts__input" id="patron" placeholder="Отчество" name="user-patron">
+					</p>
+					<p class="field-contacts__block">
+						<label for="phone" class="field-contacts__label"></label>
+						<input type="phone" class="field-contacts__input" id="phone" placeholder="Контактный телефон" name="user-phone">
+					</p>
+					<p class="field-contacts__block">
+						<label for="email" class="field-contacts__label"></label>
+						<input type="email" class="field-contacts__input" id="email" placeholder="Контактный e-mail" name="user-email">
+					</p>
+					<p class="field-contacts__block">
+						<label for="text" class="field-contacts__label"></label>
+						<textarea name="user-text" id="text" cols="30" rows="10" class="field-contacts__input" placeholder="Доп.информация для мастера"></textarea>
+					</p>
+				</fieldset>
+				<fieldset class="page-form__model field-modal">
+					<b class="field-model__name">Выберите модель бороды:</b>
+					<p class="field-modal__block">
+						<label for="admiral" class="field-modal__label">
+							<input type="radio" class="field-modal__input" name="beard" id="admiral">
+							<span class="radio-indicator"></span>Адмирал
+						</label>
+					</p>
+					<p class="field-modal__block">
+						<label for="lumberjack" class="field-modal__label">
+							<input type="radio" class="field-modal__input" name="beard" id="lumberjack">
+							<span class="radio-indicator"></span>Лесоруб
+						</label>
+					</p>
+					<p class="field-modal__block">
+						<label for="polar" class="field-modal__label">
+							<input type="radio" class="field-modal__input" name="beard" id="polar">
+							<span class="radio-indicator"></span>Полярник
+						</label>
+					</p>
+					<p class="field-modal__block">
+						<label for="boyar" class="field-modal__label">
+							<input type="radio" class="field-modal__input" name="beard" id="boyar">
+							<span class="radio-indicator"></span>Боярин
+						</label>
+					</p>
+					<p class="field-modal__block">
+						<label for="mage" class="field-modal__label">
+							<input type="radio" class="field-modal__input" name="beard" id="mage">
+							<span class="radio-indicator"></span>Мудрец
+						</label>
+					</p>
+				</fieldset>
+				<fieldset class="page-form__services field-services">
+					<b class="field-services__name">Дополнительные услуги</b>
+					<p class="field-services__block">
+						<label for="paint" class="field-services__label">
+							<input type="checkbox" class="field-services__input" id="paint" name="user-paint" checked>
+							<span class="checkbox-indicator"></span>Подкрасить бороду
+						</label>
+					</p>
+					<p class="field-services__block">
+						<label for="to-paint" class="field-services__label">
+							<input type="checkbox" class="field-services__input" id="to-paint" name="user-paint" checked>
+							<span class="checkbox-indicator"></span>Накрутить усы
+						</label>
+					</p>
+					<p class="field-services__block">
+						<label for="to-wind" class="field-services__label">
+							<input type="checkbox" class="field-services__input" id="to-wind" name="user-wind">
+							<span class="checkbox-indicator"></span>Причемать бороду
+						</label>
+					</p>
+					<p class="field-services__block">
+						<label for="to-comb" class="field-services__label">
+							<input type="checkbox" class="field-services__input" id="to-comb" name="user-comb">
+							<span class="checkbox-indicator"></span>Подровнять виски
+						</label>
+					</p>
+					<p class="field-services__block">
+						<label for="to-remove" class="field-services__label">
+							<input type="checkbox" class="field-services__input" id="to-remove" name="user-remove">
+							<span class="checkbox-indicator"></span>Убрать седну
+						</label>
+					</p>
+					<p class="field-services__block">
+						<label for="to-polish" class="field-services__label">
+							<input type="checkbox" class="field-services__input" id="to-polish" name="user-polish">
+							<span class="checkox-indicator"></span>Отполировать лысину
+						</label>
+					</p>
+				</fieldset>
+				<button class="page-form__button button" type="submit">Отправить заявку</button>
+			</form>
+		</section>
+	</main>
+		<footer class="page-footer">
+			<div class="page-footer__wrapper">
+				<div class="page-footer__contacts contacts">
+					<b class="contacts__title">Барбершоп Бородинский</b>
+					<p class="contacts__text">
+						г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+						<a href="tel:+78125556666" class="contacts__phone">
+							<span class="contacts__phone-mobile">Тел.:</span>
+							+7(812)555-66-66
+						</a>
+					</p>
+				</div>
+				<div class="page-footer__social social">
+					<b class="social__title">Давайте дружить</b>
+					<ul class="social__list">
+						<li class="social__item">
+							<a href="" class="social__link social__link--vk">Вконтакте</a>
+						</li>
+						<li class="social__item">
+							<a href="" class="social__link social__link--fb">Фейсбук</a>
+						</li>
+						<li class="social__item">
+							<a href="" class="social__link social__link--tw">Твиттр</a>
+						</li>
+					</ul>
+				</div>
+				<div class="page-footer__copyright copyright">
+					<b class="copyright__text">Разработано:</b>
+					<a class="copyright__link buton" type="button">Мной лично</a>
+				</div>
+			</div>
+		</footer>
+
+
+
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
